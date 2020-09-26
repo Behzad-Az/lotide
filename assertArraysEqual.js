@@ -15,4 +15,4 @@ const assertArraysEqual = function(actual, expected) {
 };
 
 // TEST CODE
-assertArraysEqual([1, 2, 3], [1, 2, 3], true);
+assertArraysEqual([1, 2, 3], [1, 2, 3]);
