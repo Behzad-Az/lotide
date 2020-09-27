@@ -4,19 +4,19 @@ const assertEqual = function(actual, expected) {
 };
 
 const countLetters = function(str) {
-  let letterCounts = {};
+  let results = {};
   for (const letter of str) {
     // console.log("i'm here:", letter);
-    letterCounts[letter] = letterCounts[letter] === undefined ? 1 : letterCounts[letter] + 1;
+    results[letter] = results[letter] === undefined ? 1 : results[letter] + 1;
   }
-  return letterCounts;
+  return results;
 };
 
-letterCounts = countLetters("mississippi");
+const results = countLetters("mississippi");
 
 // // TEST CODE
-assertEqual(letterCounts["m"], 1);
-assertEqual(letterCounts["i"], 4);
-assertEqual(letterCounts["s"], 4);
-assertEqual(letterCounts["p"], 2);
-assertEqual(letterCounts["q"], undefined);
+assertEqual(results["m"], 1);
+assertEqual(results["i"], 4);
+assertEqual(results["s"], 4);
+assertEqual(results["p"], 2);
+assertEqual(results["q"], undefined);
