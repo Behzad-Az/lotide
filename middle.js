@@ -23,7 +23,7 @@ const middle = function(array) {
   } else {
     return array.slice(arrayLength / 2 - 1, arrayLength / 2 + 1);
   }
-}
+};
 
 // TEST CODE
 assertArraysEqual(middle([]), []);
