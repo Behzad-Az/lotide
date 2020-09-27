@@ -17,9 +17,9 @@ const assertArraysEqual = function(actual, expected) {
 const getLetterPositions = function(str) {
   let results = {};
   str.split("").forEach((letter, index) => {
-    if (results[letter] === undefined) {
+    if (letter !== " " && results[letter] === undefined) {
       results[letter] = [index];
-    } else {
+    } else if (letter !== " ") {
       results[letter].push(index);
     }
   });
@@ -39,4 +39,3 @@ assertArraysEqual(results.u, [7, 20]);
 assertArraysEqual(results.s, [8, 21]);
 assertArraysEqual(results.e, [9, 16, 22]);
 assertArraysEqual(results.n, [12]);
-assertArraysEqual(results[" "], [10, 13, 17]);
