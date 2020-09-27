@@ -13,7 +13,7 @@ const findKeyByValue = function(obj, inputVal) {
 };
 
 const bestTVShowsByGenre = {
-  sci_fi: "The Expanse",
+  sciFi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
   drama:  "The Wire"
 };
