@@ -24,7 +24,7 @@ const getLetterPositions = function(str) {
     }
   });
   return results;
-}
+};
 
 const results = getLetterPositions("lighthouse in the house");
 
